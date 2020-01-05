@@ -63,7 +63,7 @@ app.get('/weather',(req,res)=>{
                     location: req.query.address
                 })
             })
-        }0
+        }
     })
 })
 app.get('/products',(req,res)=>{
