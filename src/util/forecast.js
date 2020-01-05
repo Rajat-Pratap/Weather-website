@@ -1,7 +1,6 @@
 
 //sxw=+SWX2@
 const request=require('request')
-
 function forecast(latitude,longitude,callback)
 {
     //url="https://api.darksky.net/forecast/[key]/[latitude],[longitude]?key1=val1&...&key3=val3"
