@@ -6,7 +6,7 @@ const geocode=require('./util/geocode')
 const forecast=require('./util/forecast')
 
 const app=express()
-
+const port=process.env.PORT||3000
 const dirPath=path.join(__dirname,'../public')
 const viewspath=path.join(__dirname,'../templates/views')
 const partialspath=path.join(__dirname,'../templates/partials')
@@ -91,6 +91,6 @@ app.get('*',(req,res)=>{
         name: 'Rajat Pratap Singh'
     })
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server iS running.')
 })
